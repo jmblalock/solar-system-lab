@@ -1,12 +1,10 @@
-# Afternoon-lab-solarsystem
 
+# WDI+TX Afternoon lab: Solarsystem
 
-# WDI+TX Afternoon-lab-solarsystem
-![ga](http://mobbook.generalassemb.ly/ga_cog.png)
 
 ---
 Title: The solar system<br>
-Creator: Thom Page<br>
+Creator: GA Instructional Team<br>
 Topics: Accessing arrays of objects and object properties
 
 ---
