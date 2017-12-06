@@ -1,5 +1,5 @@
 
-# WDI+TX Afternoon lab: Solarsystem
+# WDIplus-ATX Afternoon lab: Solarsystem
 
 
 ---
