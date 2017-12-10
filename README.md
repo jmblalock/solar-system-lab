@@ -3,7 +3,7 @@
 
 
 ---
-Title: The solar system<br>
+Title: Solar system lab<br>
 Creator: GA Instructional Team<br>
 Topics: Accessing arrays of objects and object properties
 
@@ -13,8 +13,7 @@ Topics: Accessing arrays of objects and object properties
 
 ### Nested data: Arrays of Objects
 
-* Make a file `solar_system.js` in your student_labs directory for today
-* Do your work in the `solar_system.js` file
+* Do you work in a file you'll created called `solar_system.js` 
 
 
 ## The solar system, part 1
