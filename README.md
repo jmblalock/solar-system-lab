@@ -1,5 +1,5 @@
 
-# WDIplus-ATX Afternoon lab: Solarsystem
+# WDI-WC-March2018 Afternoon lab: Solarsystem
 
 
 ---
