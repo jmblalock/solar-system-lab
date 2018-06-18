@@ -1,5 +1,5 @@
 
-# WDI-WC-March2018 Afternoon lab: Solarsystem
+# wdi-cc2-June2018 Lab: Solarsystem
 
 
 ---
@@ -13,7 +13,7 @@ Topics: Accessing arrays of objects and object properties
 
 ### Nested data: Arrays of Objects
 
-* Do you work in a file you'll created called `solar_system.js` 
+* Do you work in a file you'll created called `solarSystem.js` 
 
 
 ## The solar system, part 1
