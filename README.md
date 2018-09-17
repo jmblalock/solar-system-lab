@@ -250,7 +250,13 @@ When you `console.log(system)`, planetX should be appear as a planet in the syst
 
 # Hungry for more?
 
-## Sorting an array of objects
+## A. Weather Lab
+
+Complete this [advanced object lab, which uses weather forecast data](https://git.generalassemb.ly/WebDev-Connected-Classroom/weather-object-lab).
+
+---
+
+## B. Sorting an array of objects
 
 ### Research
 
