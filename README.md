@@ -83,7 +83,7 @@ Copy this **object** into your file (it's big). Remember, this is an **object of
 ```javascript
 const system = { 
     Mercury: { 
-        radiusp: 'same ',
+        radiusp: 'same',
         name: 'Mercury',
         density: 5.43,
         tilt: 2,
@@ -99,7 +99,7 @@ const system = {
         inclination: 7 
     },
     Venus: { 
-        radiusp: 'same ',
+        radiusp: 'same',
         name: 'Venus',
         density: 5.25,
         tilt: 177.3,
