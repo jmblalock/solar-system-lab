@@ -1,22 +1,24 @@
+![GA-logo](https://camo.githubusercontent.com/6ce15b81c1f06d716d753a61f5db22375fa684da/68747470733a2f2f67612d646173682e73332e616d617a6f6e6177732e636f6d2f70726f64756374696f6e2f6173736574732f6c6f676f2d39663838616536633963333837313639306533333238306663663535376633332e706e67)
 
-# wdi-cc2-June2018 Lab: Solarsystem
+# Solar System Lab
 
-
----
-Title: Solar system lab<br>
-Creator: GA Instructional Team<br>
-Topics: Accessing arrays of objects and object properties
-
----
-
-# Afternoon Lab
-
-### Nested data: Arrays of Objects
-
-* Do you work in a file you'll created called `solarSystem.js` 
+| Title: | Solar system lab | 
+|:---:|:---:|
+| Class: | wdi-cc | 
+| Creator: | GA Instructional Team |
+| Topics: | Objects <br> Mixed Datatypes <br> Complex Data Structures<br> `this` |
 
 
-## The solar system, part 1
+
+## Setup
+
+Do the usual thing and put your answers in `app.js`
+
+
+## Nested data: Arrays of Objects
+
+
+### The solar system, part 1
 
 The following data structure, `solarSystem`, is a common data structure: an **array** of **objects**. You will see this particular data structure more and more as you venture into JSON and servers. This one is an **array** of **objects** which also contains **arrays**.
 
@@ -61,15 +63,15 @@ console.log(solarSystem[0].ringSystem)
 
 Expected result for question 8
 
-> { name: 'Mercury', ringSystem: true, moons: [] }
+> `{ name: 'Mercury', ringSystem: true, moons: [] }`
 > 
-> { name: 'Jupiter', ringSystem: true, moons: [ 'Europa', 'Ganymede', 'Io', 'Callisto' ] }
+> `{ name: 'Jupiter', ringSystem: true, moons: [ 'Europa', 'Ganymede', 'Io', 'Callisto' ] }`
 > 
-> { name: 'Saturn', ringSystem: true, moons: [ 'Titan', 'Enceladus', 'Rhea', 'Mimas' ] }
+> `{ name: 'Saturn', ringSystem: true, moons: [ 'Titan', 'Enceladus', 'Rhea', 'Mimas' ] }`
 > 
-> { name: 'Uranus', ringSystem: true, moons: [ 'Miranda', 'Titania', 'Ariel', 'Oberon' ] }
+> `{ name: 'Uranus', ringSystem: true, moons: [ 'Miranda', 'Titania', 'Ariel', 'Oberon' ] }`
 > 
-> { name: 'Neptune', ringSystem: true, moons: [ 'Triton', 'Nereid' ] }
+> `{ name: 'Neptune', ringSystem: true, moons: [ 'Triton', 'Nereid' ] }`
 
 <br>
 <hr>
@@ -80,141 +82,150 @@ Copy this **object** into your file (it's big). Remember, this is an **object of
 
 ```javascript
 const system = { 
-  Mercury: 
-   { radiusp: 'same ',
-     name: 'Mercury',
-     density: 5.43,
-     tilt: 2,
-     image: 'textures/mercury.gif',
-     rotationperiod: 1408,
-     period: 0.24,
-     radiuse: 2439,
-     satellites: 0,
-     au: 0.3871,
-     eccentricity: 0.206,
-     velocity: 47.89,
-     mass: 0.06,
-     inclination: 7 },
-  Venus: 
-   { radiusp: 'same ',
-     name: 'Venus',
-     density: 5.25,
-     tilt: 177.3,
-     image: 'textures/venus.gif',
-     rotationperiod: 5832,
-     period: 0.62,
-     radiuse: 6052,
-     satellites: 0,
-     au: 0.7233,
-     eccentricity: 0.007,
-     velocity: 35.04,
-     mass: 0.82,
-     inclination: 3.4 },
-  Earth: 
-   { radiusp: 6357,
-     name: 'Earth',
-     density: 5.52,
-     tilt: 23.45,
-     image: 'textures/earth.gif',
-     rotationperiod: 23.93,
-     period: 1,
-     radiuse: 6378,
-     satellites: 1,
-     au: 1,
-     eccentricity: 0.017,
-     velocity: 29.79,
-     mass: 1,
-     inclination: 0 },
-  Mars: 
-   { radiusp: 3380,
-     name: 'Mars',
-     density: 3.95,
-     tilt: 25.19,
-     image: 'textures/mars.gif',
-     rotationperiod: 24.62,
-     period: 1.88,
-     radiuse: 3397,
-     satellites: 2,
-     au: 1.524,
-     eccentricity: 0.093,
-     velocity: 24.14,
-     mass: 0.11,
-     inclination: 1.85 },
-  Jupiter: 
-   { radiusp: 66854,
-     name: 'Jupiter',
-     density: 1.33,
-     tilt: 3.12,
-     image: 'textures/jupiter.gif',
-     rotationperiod: 9.92,
-     period: 11.86,
-     radiuse: 71490,
-     satellites: '69',
-     au: 5.203,
-     eccentricity: 0.048,
-     velocity: 13.06,
-     mass: 317.89,
-     inclination: 1.3 },
-  Saturn: 
-   { radiusp: 54360,
-     name: 'Saturn',
-     density: 0.69,
-     tilt: 26.73,
-     image: 'textures/saturn.gif',
-     rotationperiod: 10.66,
-     period: 29.46,
-     radiuse: 60268,
-     satellites: 30,
-     au: 9.539,
-     eccentricity: 0.056,
-     velocity: 9.64,
-     mass: 95.18,
-     inclination: 2.49 },
-  Uranus: 
-   { radiusp: 24973,
-     name: 'Uranus',
-     density: 1.29,
-     tilt: 97.86,
-     image: 'textures/uranus.gif',
-     rotationperiod: 17.24,
-     period: 84.01,
-     radiuse: 25559,
-     satellites: 24,
-     au: 19.19,
-     eccentricity: 0.046,
-     velocity: 6.81,
-     mass: 14.53,
-     inclination: 0.77 },
-  Neptune: 
-   { radiusp: 24340,
-     name: 'Neptune',
-     density: 1.64,
-     tilt: 29.6,
-     image: 'textures/neptune.gif',
-     rotationperiod: 16.11,
-     period: 164.79,
-     radiuse: 25269,
-     satellites: 8,
-     au: 30.06,
-     eccentricity: 0.01,
-     velocity: 5.43,
-     mass: 17.14,
-     inclination: 1.77 },
-  Pluto: 
-   { radiusp: 'same',
-     name: 'Pluto',
-     density: 2.03,
-     tilt: 122.46,
-     image: 'textures/pluto.gif',
-     rotationperiod: 153.3,
-     period: 248.54,
-     radiuse: 1160,
-     satellites: 1,
-     au: 39.48,
-     eccentricity: 0.248,
-     velocity: 4.74,
-     mass: 0.002,
-     inclination: 17.15 } 
+    Mercury: { 
+        radiusp: 'same ',
+        name: 'Mercury',
+        density: 5.43,
+        tilt: 2,
+        image: 'textures/mercury.gif',
+        rotationperiod: 1408,
+        period: 0.24,
+        radiuse: 2439,
+        satellites: 0,
+        au: 0.3871,
+        eccentricity: 0.206,
+        velocity: 47.89,
+        mass: 0.06,
+        inclination: 7 
+    },
+    Venus: { 
+        radiusp: 'same ',
+        name: 'Venus',
+        density: 5.25,
+        tilt: 177.3,
+        image: 'textures/venus.gif',
+        rotationperiod: 5832,
+        period: 0.62,
+        radiuse: 6052,
+        satellites: 0,
+        au: 0.7233,
+        eccentricity: 0.007,
+        velocity: 35.04,
+        mass: 0.82,
+        inclination: 3.4 
+    },
+    Earth: { 
+        radiusp: 6357,
+        name: 'Earth',
+        density: 5.52,
+        tilt: 23.45,
+        image: 'textures/earth.gif',
+        rotationperiod: 23.93,
+        period: 1,
+        radiuse: 6378,
+        satellites: 1,
+        au: 1,
+        eccentricity: 0.017,
+        velocity: 29.79,
+        mass: 1,
+        inclination: 0 
+    },
+    Mars: {
+        radiusp: 3380,
+        name: 'Mars',
+        density: 3.95,
+        tilt: 25.19,
+        image: 'textures/mars.gif',
+        rotationperiod: 24.62,
+        period: 1.88,
+        radiuse: 3397,
+        satellites: 2,
+        au: 1.524,
+        eccentricity: 0.093,
+        velocity: 24.14,
+        mass: 0.11,
+        inclination: 1.85 
+    },
+    Jupiter: { 
+        radiusp: 66854,
+        name: 'Jupiter',
+        density: 1.33,
+        tilt: 3.12,
+        image: 'textures/jupiter.gif',
+        rotationperiod: 9.92,
+        period: 11.86,
+        radiuse: 71490,
+        satellites: '69',
+        au: 5.203,
+        eccentricity: 0.048,
+        velocity: 13.06,
+        mass: 317.89,
+        inclination: 1.3 
+    }, 
+    Saturn: { 
+        radiusp: 54360,
+        name: 'Saturn',
+        density: 0.69,
+        tilt: 26.73,
+        image: 'textures/saturn.gif',
+        rotationperiod: 10.66,
+        period: 29.46,
+        radiuse: 60268,
+        satellites: 30,
+        au: 9.539,
+        eccentricity: 0.056,
+        velocity: 9.64,
+        mass: 95.18,
+        inclination: 2.49 
+    },
+    Uranus: { 
+        radiusp: 24973,
+        name: 'Uranus',
+        density: 1.29,
+        tilt: 97.86,
+        image: 'textures/uranus.gif',
+        rotationperiod: 17.24,
+        period: 84.01,
+        radiuse: 25559,
+        satellites: 24,
+        au: 19.19,
+        eccentricity: 0.046,
+        velocity: 6.81,
+        mass: 14.53,
+        inclination: 0.77 
+    },
+    Neptune: { 
+        radiusp: 24340,
+        name: 'Neptune',
+        density: 1.64,
+        tilt: 29.6,
+        image: 'textures/neptune.gif',
+        rotationperiod: 16.11,
+        period: 164.79,
+        radiuse: 25269,
+        satellites: 8,
+        au: 30.06,
+        eccentricity: 0.01,
+        velocity: 5.43,
+        mass: 17.14,
+        inclination: 1.77 
+    },
+    Pluto: { 
+        radiusp: 'same',
+        name: 'Pluto',
+        density: 2.03,
+        tilt: 122.46,
+        image: 'textures/pluto.gif',
+        rotationperiod: 153.3,
+        period: 248.54,
+        radiuse: 1160,
+        satellites: 1,
+        au: 39.48,
+        eccentricity: 0.248,
+        velocity: 4.74,
+        mass: 0.002,
+        inclination: 17.15 
+    } 
 }
 ```
 
@@ -235,16 +246,11 @@ Without directly altering either the `system` object or the `PlanetX` object, in
 
 When you `console.log(system)`, planetX should be appear as a planet in the system.
 
-<br>
-<hr>
-<hr>
-<br>
+---
 
-# ADVANCED (Bonus material)
+# Hungry for more?
 
-Self-guided study and research:
-
-## sorting an array of objects
+## Sorting an array of objects
 
 ### Research
 
@@ -256,18 +262,20 @@ unsorted array:
 
 ```javascript
 const movies = [
-               { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 },
-               { title: "Eraserhead", director: "David Lynch", year: 1978 },
-               { title: "Dayereh", director: "Jafar Panahi", year: 2000 }
-             ]
+    { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 },
+    { title: "Dayereh", director: "Jafar Panahi", year: 2000 }
+    { title: "Eraserhead", director: "David Lynch", year: 1978 },
+];
 ```
 
 sorted by 'title':
 
 ```javascript
-[ { title: 'Dayereh', director: 'Jafar Panahi', year: 2000 },
-  { title: 'Eraserhead', director: 'David Lynch', year: 1978 },
-  { title: 'L\'Avventura', director: 'Michelangelo Antonioni', year: 1960 } ]
+[ 
+    { title: "Dayereh", director: "Jafar Panahi", year: 2000 },
+    { title: "Eraserhead", director: "David Lynch", year: 1978 },
+    { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 } 
+];
 ```
 
 If you just use `.sort()` on an array of objects, there are no criteria to sort by (which object comes first?), so the array will not be sorted.
@@ -276,58 +284,57 @@ However, you can provide `.sort()` with arguments to tell JavaScript which **obj
 
 Read the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) -- scroll down to: **Objects can be sorted given the value of one of their properties.**
 
-### 1. use .sort() to sort the solar system array alphabetically according to the name of each planet
 
-<br>
-
-EXTRA CHALLENGE-CHALLENGE
-
-### 2. write a function `sortArrayOfObjects` with two parameters: `arr` and `key` that will sort any array of objects by the `key` input.
-
-Example of sorting the movies array:
+#### Example of sorting the movies array:
 
 ```javascript
 console.log(sortArrayOfObjects(movies, "title"));
 ```
 
-Result sorted by title:
+#### Result sorted by title:
 
 ```javascript
-[ { title: 'Dayereh', director: 'Jafar Panahi', year: 2000 },
-  { title: 'Eraserhead', director: 'David Lynch', year: 1978 },
-  { title: 'L\'Avventura', director: 'Michelangelo Antonioni', year: 1960 } ]
+[ 
+    { title: "Dayereh", director: "Jafar Panahi", year: 2000 },
+    { title: "Eraserhead", director: "David Lynch", year: 1978 },
+    { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 } 
+];
 ```
 
-Example of sorting the movies array:
+#### Example of sorting the movies array:
 
 ```javascript
 console.log(sortArrayOfObjects(movies, "year"));
 ```
 
-Result sorted by year:
+#### Result sorted by year:
 
 ```javascript
-[ { title: 'L\'Avventura',
-    director: 'Michelangelo Antonioni',
-    year: 1960 },
-  { title: 'Eraserhead', director: 'David Lynch', year: 1978 },
-  { title: 'Dayereh', director: 'Jafar Panahi', year: 2000 } ]
+const movies = [
+    { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 },
+    { title: "Eraserhead", director: "David Lynch", year: 1978 },
+    { title: "Dayereh", director: "Jafar Panahi", year: 2000 }
+];
 ```
 
-Example of sorting the movies array:
+#### Example of sorting the movies array:
 
 ```javascript
 console.log(sortArrayOfObjects(movies, "director"))
 ```
 
-Result sorted by director:
+#### Result sorted by director:
 
 ```javascript
-[ { title: 'Eraserhead', director: 'David Lynch', year: 1978 },
-  { title: 'Dayereh', director: 'Jafar Panahi', year: 2000 },
-  { title: 'L\'Avventura',
-    director: 'Michelangelo Antonioni',
-    year: 1960 } ]
+const movies = [
+    { title: "Eraserhead", director: "David Lynch", year: 1978 },
+    { title: "Dayereh", director: "Jafar Panahi", year: 2000 }
+    { title: "L'Avventura", director: "Michelangelo Antonioni", year: 1960 },
+];
 ```
 
-<hr>
+### Questions:
+
+1. use `.sort()` to sort the solar system array alphabetically according to the name of each planet
+
+2. write a function `sortArrayOfObjects` with two parameters: `arr` and `key` that will sort any array of objects by the `key` input. It should `console.log()` **and** `return` "Invalid key" if the user specifies a key that isn't in the array.
