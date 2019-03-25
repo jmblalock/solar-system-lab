@@ -258,4 +258,4 @@ Complete this [advanced object lab, which uses weather forecast data](https://gi
 
 ## B. Sorting an array of objects
 
-Complete this [activity about the Array method `.sort()`] which is very powerful and can be used to sort arrays in a number of ways.  
+Complete this [activity about the Array method `.sort()`](https://git.generalassemb.ly/WebDev-Connected-Classroom/sort-activity) which is very powerful and can be used to sort arrays in a number of ways.  
