@@ -4,7 +4,7 @@
 
 | Title: | Solar system lab | 
 |:---:|:---:|
-| Class: | wdi-cc | 
+| Class: | sei | 
 | Creator: | GA Instructional Team |
 | Topics: | Objects <br> Mixed Datatypes <br> Complex Data Structures<br> `this` |
 
