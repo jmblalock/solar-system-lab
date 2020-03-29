@@ -6,7 +6,7 @@
 |:---:|:---:|
 | Class: | sei | 
 | Creator: | GA Instructional Team |
-| Topics: | Objects <br> Mixed Datatypes <br> Complex Data Structures<br> `this` |
+| Topics: | Objects <br> Mixed Datatypes <br> Complex Data Structures<br>  |
 
 
 
