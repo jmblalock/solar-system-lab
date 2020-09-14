@@ -252,7 +252,7 @@ When you `console.log(system)`, planetX should be appear as a planet in the syst
 
 ## A. Weather Lab
 
-Complete this [advanced object lab, which uses weather forecast data](https://git.generalassemb.ly/sf-sei-3/weather-object-lab).
+Complete this [advanced object lab, which uses weather forecast data](https://git.generalassemb.ly/la-seir-9-8/weather-object-lab).
 
 ---
 
